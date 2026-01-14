@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Scott Adams on GitHub – Analysis</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Analysis of trends in Scott Adams–related projects on GitHub.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="site-title">Scott Adams on GitHub</h1>
+      <p class="site-subtitle">Trends and analysis</p>
+      <nav class="site-nav">
+        <a href="index.html">Home</a>
+        <a href="repos.html">Repositories</a>
+        <a href="analysis.html" class="active">Analysis</a>
+        <a href="history.html">History</a>
+        <a href="tutorials.html">Tutorials</a>
+        <a href="blog.html">Blog</a>
+        <a href="about.html">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section>
+      <h2>What does the GitHub activity look like?</h2>
+      <p>
+        This page gives a narrative overview of how interest in Scott Adams–style adventures is
+        showing up on GitHub: which languages people choose, which types of projects are most
+        common, and how activity has changed over time.
+      </p>
+    </section>
+
+    <section class="card">
+      <h3>Types of projects</h3>
+      <ul>
+        <li><strong>Interpreters:</strong> Engines that load and run game data from original or compatible formats.</li>
+        <li><strong>Compilers:</strong> Tools that convert human‑readable scripts into story files.</li>
+        <li><strong>Authoring environments:</strong> Editors or GUIs that make it easier to build adventures.</li>
+        <li><strong>Reverse‑engineering:</strong> Disassemblies, notes, and technical docs about old binaries.</li>
+        <li><strong>Ports and experiments:</strong> Re‑implementations for new platforms or creative remixes.</li>
+      </ul>
+      <p>
+        When you survey the repositories, you will likely see clusters of similar efforts, often
+        created by different people who discovered the games at different times.
+      </p>
+    </section>
+
+    <section class="card">
+      <h3>Language and platform trends</h3>
+      <p>
+        Most modern re‑implementations use languages that make cross‑platform deployment easier:
+        C#, JavaScript/TypeScript, Python, or portable C/C++. You may also spot hobbyist projects
+        in languages the original games never targeted, like Rust or Go.
+      </p>
+      <p>
+        A common pattern is that someone writes a minimal engine in their favorite language, then
+        gradually adds features as they understand more of the original design.
+      </p>
+    </section>
+
+    <section class="card">
+      <h3>Activity over time</h3>
+      <p>
+        Interest in retro computing often comes in waves. You can manually inspect commit histories
+        to see bursts of activity around certain years, then new bursts when another developer
+        rediscovers the format or ports it to a new platform.
+      </p>
+      <p>
+        If you want to be more systematic, you can record the creation dates and last‑updated dates
+        of each repository in a spreadsheet and chart them by year.
+      </p>
+    </section>
+
+    <section class="card">
+      <h3>How to build your own charts (optional)</h3>
+      <p>
+        If you are comfortable editing a bit of code, you can embed charts using a free library
+        like Chart.js. For example, you could show how many projects use each programming language.
+      </p>
+      <p>
+        To keep this site fully static and free, you can hard‑code the data into a script and update
+        it manually whenever you rescan GitHub.
+      </p>
+      <pre><code>&lt;!-- Example placeholder for a chart container --&gt;
+&lt;canvas id="languageChart" width="400" height="200"&gt;&lt;/canvas&gt;
+&lt;!-- You would then include a small script referencing Chart.js --&gt;</code></pre>
+    </section>
+
+    <section class="highlight">
+      <h2>How to keep this analysis honest</h2>
+      <ul>
+        <li><strong>Be explicit:</strong> Say when you are estimating versus measuring.</li>
+        <li><strong>Show your criteria:</strong> Explain how you chose which repos to include.</li>
+        <li><strong>Update periodically:</strong> Retro projects come and go; re‑scan GitHub sometimes.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>This analysis is descriptive, not exhaustive. You are encouraged to explore the repos yourself.</p>
+    </div>
+  </footer>
+</body>
+</html>
